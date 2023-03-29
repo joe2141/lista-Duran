@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <ng-container *ngFor="let alumno of alumnos">
+      <li class="list-group-item"
+      [ngStyle]="{'background-color': (alumno == 'Nagore Alcalde') ? 'red' : 'green', 'font-size': getFontsize(1)}">{{ alumno | lowercase }}</li>
+  </ng-container>
+</ul>
